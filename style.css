@@ -36,26 +36,23 @@
 }
 
 .sidelogo {
-   
     font-size: 1.3rem;
     display: flex;
     flex-wrap: nowrap;
     margin: 2rem;
-
-    
 }
 
 .sidelogo::before {
     content: "" ;
-    background-image: url('images/bomb.svg');
-    background-size: 25px;
+    background-image: url('images/drexciya.jpg');
+    background-size: 40px;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
-    filter: invert(100%); /*inverts colour of bg image*/
     margin-right: 5px;
-    
+    border-radius: 50px;
+    margin-top: -8px;
     
     
 }
@@ -208,6 +205,7 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 5px 5px  rgb(194, 180, 160);;
 }
 
 .search {
@@ -226,8 +224,6 @@ a {
     width: 20px;
     height: 20px;
     margin: 15px;
-    /* vertical-align: -20%; */
-
 }
 
 input {
@@ -236,8 +232,6 @@ input {
     border-style: none;
     padding: 5px;
     background-color: rgb(230, 234, 236);
-    
-
 }
 
 .tlinks {
@@ -288,31 +282,34 @@ input {
     grid-auto-flow: column;
     
     align-items: end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-button {
+
+.buttons {
     border-style: none;
     background-color: rgb(52, 161, 224);
     color: white;
     font-weight: bold;
+    font-size: small;
     border-radius: 50px;
-    padding: 6px 25px;
-
-
+    padding: 5px 20px;
 }
+
+.buttons:hover {
+    background-color: rgb(25, 111, 161);
+}
+
+
 /* Content area */
 
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 1rem .3rem 1rem 1rem  ;
-    
+    padding: 1rem .3rem 1.8rem 1rem  ;
+    margin-top: 4px;
     background-color: rgb(216, 212, 212);
     grid-column: 2;
-    
-    
-
 }
 
 .mainleft {
@@ -335,18 +332,21 @@ button {
 
 
 .card {
-    
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: auto minmax(auto, 60px) 1fr;
     padding: 1em;
-    background-color: rgb(255, 253, 250);
-    border-radius: 10px;
+    background-color: rgb(250, 253, 255);
+    border-radius: 8px;
+    border-left: .40rem solid rgb(231, 185, 34);
+    box-shadow: 1px 2px 2px 1px rgb(172, 164, 153); ;
   
 }
 
 .title{
     font-weight: bold;
     margin-bottom: .2em;
+    font-size: .9em;
 
 }
 
@@ -357,10 +357,23 @@ button {
     
 }
 
+#social {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: minmax(auto, 40px);
+    justify-content: end;
+    gap: 20px;
+}
+
+/* Rotate share icon  */
+.share {
+    transform: rotate(270deg);
+}
 
 .contentleft {
     font-size: small;
     color: rgb(180, 180, 172);
+    margin-bottom: 10px;
 }
 
 .mainright {
@@ -378,8 +391,8 @@ button {
     grid-template-rows: repeat(auto-fit);
     padding: 15px;
     background-color: white;
-    border-radius: 10px;
-    
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0 rgb(172, 164, 153);
     
 }
 
@@ -404,12 +417,13 @@ button {
 
 .trendcard {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .8fr 2fr;
     grid-template-rows: repeat(4, 1fr);
     background-color: white;
     padding: 10px;
     font-size: smaller;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px rgb(172, 164, 153); ;
 }
 
  .usercard  {
@@ -426,25 +440,19 @@ button {
     grid-column: 1/2;
     height: 40px;
     width: 40px;
+    border-radius: 50px;
 }
 
-/* .usercard {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
-} */
+.username {
+    font-size: small;
+}
 
-/* .username::before {
-    content: "" ;
-    background-image: url('images/R-3058-1080812346.gif');
-    background-size: 40px;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    margin-right: 20px;
+.userupdate {
+    font-size: x-small;
     
-} */
+    color: rgb(133, 127, 127);
+}
+
 
 
 

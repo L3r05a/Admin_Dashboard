@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="container"> 
 
     <div class="sidebar">
@@ -35,19 +36,21 @@
 
 
         <div class="search">
-            <input type="search" placeholder="search">
+            <input type="search" name="search">
         </div>
 
         <div class="tlinks">
-             <img class="bell" src="images/bell-ring-outline.svg" alt="bell">
-            <img class="avatarsmall" src="images/R-3058-1080812346.gif" alt="avatar">
+
+            <a href="#"> <img class="bell" src="images/bell-ring-outline.svg" title="notifications"></a>
+
+            <img class="avatarsmall" src="images/R-3058-1080812346.gif" title="avatar">
             <p class="usernamesmall">Lardossan Wavejumper</p>
 
         </div>
 
 
         <div class="usergreet">
-            <img class="avatarbig" src="images/R-3058-1080812346.gif" alt="avatarbig">
+            <img class="avatarbig" src="images/R-3058-1080812346.gif" title="avatarbig">
 
             <div class="greet">
             <p class="hello">Hi there,</p>
@@ -57,10 +60,10 @@
 
 
         <div class="topbuttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>            
-
+       
+            <a class="buttons" href="#">New</a>
+            <a class="buttons" href="#">Upload</a>
+            <a class="buttons" href="#">Share</a>
         </div>
 
 
@@ -72,26 +75,85 @@
                 <div class="banner1">Your Projects</div>
 
                 <div class="card card1">
-                    <p class="title">Super Cool Project</p>
+                    <p class="title">The Quest</p>
                     <p class="contentleft">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque est ut provident hic perferendis. 
                     </p>
-                    <img class="social" src="images/star-plus-outline.svg" alt="like">
+                    <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
 
-                    <img class="social" src="images/eye-plus-outline.svg" alt="watch">
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
 
-                    <img class="social" src="images/share-variant-outline.svg" alt="share">
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
                 </div>
                 <div class="card card2">
-                    <p class="title">Impossible App</p>
+                    <p class="title">Harnessing the Storm</p>
+                    <p class="contentleft">
+                        At magnam officiis voluptates consectetur commodi optio provident nam maxime! Culpa vitae explicabo mollitia ducimus quod!explicabo
+                    </p>
+                   <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
+
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
+
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <p class="title">Elektroids</p>
+                    <p class="contentleft">
+                        At magnam officiis voluptates consectetur commodi optio provident nam maxime! Culpa vitae 
+                    </p>
+                   <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
+
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
+
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
+                </div>
+
+                <div class="card card4">
+                    <p class="title">Sea Snake</p>
+                    <p class="contentleft">
+                        consectetur commodi optio provident nam maxime! Culpa vitae explicabo mollitia ducimus quod!
+                    </p>
+                   <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
+
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
+
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
+                </div>
+                <div class="card card5">
+                    <p class="title">Grava 4</p>
+                    <p class="contentleft">
+                        explicabo mollitia ducimus quod!
+                        At magnam officiis voluptates consectetur commodi optio provident nam maxime! Culpa vitae explicabo mollitia ducimus quod!
+                    </p>
+                   <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
+
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
+
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
+                </div>
+                <div class="card card6">
+                    <p class="title">Transillusion</p>
                     <p class="contentleft">
                         At magnam officiis voluptates consectetur commodi optio provident nam maxime! Culpa vitae explicabo mollitia ducimus quod!
                     </p>
+                   <div id="social">
+                    <a href="#"> <img class="social" src="images/star-plus-outline.svg" title="like"></a>
+
+                    <a href="#"><img class="social" src="images/eye-plus-outline.svg" title="watch"></a>
+
+                    <a href="#"><img class="social share" src="images/share-variant-outline.svg" title="share"></a>
+                    </div>
                 </div>
-                <div class="card card3">Card 3</div>
-                <div class="card card4">Card 4</div>
-                <div class="card card5">Card 5</div>
-                <div class="card card6">Card 6</div>
             </div>
 
                 <div class="mainright">
@@ -120,36 +182,36 @@
 
                     <div class="trendcard">
 
-                         <img class="icon" src="images/R-3058-1080812346.gif" alt="test">
+                         <img class="icon" src="images/thumb2.png" title="bongo">
 
                         <div class="usercard user1">
                            
-                            <p class="username">username</p>
-                            <p class="userupdate">user update</p>
+                            <p class="username">@bongo</p>
+                            <p class="userupdate">Yawn Fest TechBro</p>
                         </div>
 
-                        <img class="icon" src="images/R-3058-1080812346.gif" alt="test">
+                        <img class="icon" src="images/R-3058-1080812346.gif" title="wavejumper">
 
                         <div class="usercard user2">
                            
-                            <p class="username">username</p>
-                            <p class="userupdate">user update</p>
+                            <p class="username">@wavejumper</p>
+                            <p class="userupdate">The Aquabahn</p>
                         </div>
 
-                        <img class="icon" src="images/R-3058-1080812346.gif" alt="test">
+                        <img class="icon" src="images/thumb3.png" title="sausage">
 
                         <div class="usercard user3">
                            
-                            <p class="username">username</p>
-                            <p class="userupdate">user update</p>
+                            <p class="username">@sausage</p>
+                            <p class="userupdate">Crying in the bathroom</p>
                         </div>
 
-                        <img class="icon" src="images/R-3058-1080812346.gif" alt="test">
+                        <img class="icon" src="images/thumb4.png" title="pinky">
 
                         <div class="usercard user4">
                            
-                            <p class="username">username</p>
-                            <p class="userupdate">user update</p>
+                            <p class="username">@pinky</p>
+                            <p class="userupdate">Death Ray Gun</p>
                         </div>
                     
                         </div> 
