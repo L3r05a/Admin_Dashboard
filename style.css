@@ -52,9 +52,7 @@
     display: inline-block;
     margin-right: 5px;
     border-radius: 50px;
-    margin-top: -8px;
-    
-    
+    margin-top: -8px;   
 }
 
 a {
@@ -66,7 +64,6 @@ a {
 .links2 {
     display: grid;
     grid-auto-rows: 40px;
-
 }
 
 
@@ -213,7 +210,6 @@ a {
     justify-content: left;
     align-items: center;
     grid-auto-flow: column;
-    
 }
 
 .search::before {
